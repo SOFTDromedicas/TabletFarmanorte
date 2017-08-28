@@ -1,0 +1,123 @@
+/* Modificaciones al Diseño */
+.sidebar em {
+    font-size:1.5rem!important;
+}
+
+.content-nav{
+  /*position: fixed;*/
+}
+
+.page-header {
+  margin-bottom: 0.1rem!important;
+}
+
+.jumbotron {
+  padding: 0rem 0rem!important;
+}
+
+.mb-4 {
+    margin-bottom: 0.5rem!important;
+}
+.h1,h2{
+	padding-bottom: 0.1rem!important;
+}
+
+@media screen and (max-width: 576px){
+
+  #wrapper .sidebar-nav {
+    display: none!important; }
+
+  #wrapper.toggled .sidebar-nav {
+    display: block !important; }
+
+  .sidebar {
+    position: sticky!important;
+    padding-bottom: 0px;
+    margin-bottom: 1rem; 
+
+    padding-top: 10px!important;
+    padding-bottom:0;
+    padding-right: 10px!important;
+    padding-left: 10px!important;
+    
+  }
+
+  #menu-toggle {
+    background-color: #6365d2!important; 
+    padding-top: 0;
+  } 
+}
+
+.sidebar {
+  margin-bottom: 0rem!important;
+
+}
+
+.p{
+  line-height: 0.1rem!important;
+}
+
+.logoprincipal{
+  width:100%!important;
+  position:inherit!important;
+  float:center!important;
+  width: 3em;
+  height: 3em;
+  align:center!important;
+  margin-top:0em;
+  padding-top:0em;
+  margin-bottom:1em;
+  text-align: center;
+}
+
+.imagelogo{
+  /*margin-left:40%!important; 	*/
+  width: 5em!important;
+ /* height: 3.5em!important;*/
+
+}
+
+
+#registro {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; 
+  
+  padding-top: 0;
+}
+
+.site-title{
+   margin-top: 0rem!important;
+   margin-bottom: 0rem!important;
+}
+
+.sinmargen{
+   margin: 0rem!important;
+   padding: 0rem!important;
+}
+
+.espacio3{
+   margin-top: 1rem!important;
+}
+
+.siteloader {
+  text-align: center;
+  width:100%!important;
+  height:100%!important;
+  font-family: verdana;
+  font-size: 10px;
+  min-height: 100vh;
+}
+.letra30{
+  font-size:30px;	
+}
+
+.padding1{
+   margin: 0rem!important;
+   padding: 1rem!important;
+}
+
+.obligatorio
+{
+  color: #FA8258;
+}

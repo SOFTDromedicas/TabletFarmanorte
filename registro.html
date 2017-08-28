@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Puntos Farmanorte es el programa de fidelizaci&oacute;n de clientes de la cadena Drogueria Faramanorte">
+    <meta name="author" content="SoftDeromedicas">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/favicon.png">
+	<title>Puntos Farmanorte </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Estilo CSS propio -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+
+	   <div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title">
+				   <div class="logoprincipal">
+				       <a href="index.html"><img src="images/LogoPuntosFarmanorte.svg" class="imagelogo"></a>
+				   </div>
+				</h1>
+				
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				<a href="#menu-toggle" class="btn btn-default" id="registro"><em class="fa fa-lock"></em></a>
+				
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link active" href="index.html"><em class="fa fa-dashboard"></em> Acceso App <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="widgets.html"><em class="fa fa-calendar-o"></em> Widgets</a></li>
+					<li class="nav-item"><a class="nav-link" href="charts.html"><em class="fa fa-bar-chart"></em> Charts</a></li>
+					<li class="nav-item"><a class="nav-link" href="elements.html"><em class="fa fa-hand-o-up"></em> Puntos de Venta</a></li>
+					<li class="nav-item"><a class="nav-link" href="cards.html"><em class="fa fa-clone"></em> Contacto </a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.farmanorte.com.co/seccion/mapsfarmanorte.html" target="_blank"><em class="fa fa-clone"></em> Sucursales </a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.farmanorte.com.co/" target="_blank"><em class="fa fa-clone"></em> Web Farmanorte </a></li>
+					<li class="nav-item"><a class="nav-link" href="dropos.html" target="_blank"><em class="fa fa-clone"></em> Dropos ERP </a></li>
+					<li class="nav-item"><a class="nav-link" href="dropos.html" target="_blank"><em class="fa fa-power-off"></em> Signout </a></li>
+				</ul>
+				
+			
+			</nav>
+	
+			    <main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+								
+				
+
+ <!-- formulario de inscripcion -->
+    <section id="inscripcion-content">
+      <div class="row">
+        <h3 id="inscripcion-title" class="float-center">Formulario de Inscripci&oacute;n</h3>
+      </div>
+      <div id="response-container"></div>
+        <div class="form-group">
+		   <small id="emailHelp" class="form-text text-muted">&nbsp;Seleccione un tipo de documento</small>
+           <select class="form-control" id="tipodocumento" name="tipodocumento">
+			  <option value="01">Cedula de Ciudadan&iacute;a</option>
+              <option value="02">Cedula de Extranjer&iacute;a</option>
+              <option value="03">Pasaporte</option>
+              <option value="04">Otro</option>
+           </select>
+        </div>
+        <div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;N&uacute;mero de Documento <span class="obligatorio"> (Obligatorio) </span></small>
+          <input type="number" class="form-control" id="documento" name="documento" placeholder="Numero de Cedula" autocomplete="off">
+        </div>
+        <div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Nombres Completos <span class="obligatorio"> (Obligatorio) </span></small>
+          <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" autocomplete="off">
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Apellidos Completos <span class="obligatorio"> (Obligatorio) </span></small>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" autocomplete="off">
+        </div>
+        <div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Correo Electr&oacute;nico <span class="obligatorio"> (Obligatorio) </span></small>
+		  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Correo Electr&oacute;nico V&aacute;lido">
+		</div>
+        <div class="form-group">
+           <small id="emailHelp" class="form-text text-muted">&nbsp;Debe elegir un g&eacute;nero</small>
+		   <select class="form-control" id="sexo" name="sexo">
+			  <option value="01">Femenino</option>
+              <option value="02">Masculino</option>
+              <option value="03">Otro</option>
+           </select>
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Direccion de su domicilio</small>
+          <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direcci&oacute;n">
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Fecha de Nacimiento <span class="obligatorio"> (Obligatorio) </span></small>
+          <input type="date" class="form-control" id="fechanacimiento" name="fechanacimiento" placeholder="Fecha de Nacimiento">
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Tel&eacute;fono Fijo</small>
+          <input type="number" class="form-control" id="telefonofijo" name="telefonofijo" placeholder="Telefono Fijo">
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Tel&eacute;fono Movil <span class="obligatorio"> (Obligatorio) </span></small>
+          <input type="number" class="form-control" id="celular" name="celular" placeholder="Telefono Movil">
+        </div>
+		<div class="form-group">
+		  <small id="emailHelp" class="form-text text-muted">&nbsp;Ciudad</small>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
+        </div>
+		<div class="form-check">
+			<label class="form-check-label">
+			  <input type="checkbox" class="form-check-input" name="acepto" id="acepto" value="CHECKED">&nbsp;Acepto los Terminos y Condiciones
+			</label>
+        </div>
+        <button type="button" data-user="0" class="btn btn-sm btn-success">Registrarme en el Programa</button>
+      </section>
+	 <br><br>
+
+			</main>
+		</div>
+	</div>
+      
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+    
+     <!-- JavaScript Connect WebService 
+    ================================================== -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+		    //getdeails será nuestra función para enviar la solicitud ajax
+		    var getRegistro = function()
+		    {
+		        var documento = document.getElementById("documento").value;
+                var nombres = document.getElementById("nombres").value;
+                var apellidos = document.getElementById("apellidos").value;
+                var tipodocumento = document.getElementById("tipodocumento").value;
+                var sexo = document.getElementById("sexo").value;
+                var direccion = document.getElementById("direccion").value;
+                var fechanacimiento = document.getElementById("fechanacimiento").value;
+                var telefonofijo = document.getElementById("telefonofijo").value;
+                var celular = document.getElementById("celular").value;
+                var ciudad = document.getElementById("ciudad").value;
+                var email = document.getElementById("email").value;
+
+		        var rutaws = "http://dromedicas.sytes.net:9999/dropos/wsjson/fpafiliacion/";
+		        return $.getJSON( rutaws , { "documento" : documento , "nombres" : nombres  , "apellidos" : apellidos  , "tipodocumento" : tipodocumento  , "sexo" : sexo  , "direccion" : direccion  , "fechanacimiento" : fechanacimiento  , "telefonofijo" : telefonofijo  , "celular" : celular  , "ciudad" : ciudad  , "email" : email });
+		    }
+		    
+		    //al hacer click sobre cualquier elemento que tenga el atributo data-user.....
+		    $('[data-user]').click(function(e){
+		        //Detenemos el comportamiento normal del evento click sobre el elemento clicado
+		        e.preventDefault();
+		        //Mostramos texto de que la solicitud está en curso
+		        $("#response-container").html("<p>Buscando...</p>");
+		        //this hace referencia al elemento que ha lanzado el evento click
+		        //con el método .data('user') obtenemos el valor del atributo data-user de dicho elemento y lo pasamos a la función getdetails definida anteriormente
+			     
+
+                //// Llamo al Webservice 
+		        getRegistro().done( function( response ) {
+			        if(response.code == 200)
+			        {
+			             $("#response-container").html("Registro Exitoso");
+			          	 document.location.href = "registroexitoso.html";
+			        }
+			        else
+			        {
+			        	 var detalle = response.message;
+			        	 $("#response-container").html('<font color="red">' + detalle);
+			        }	
+
+                });
+		        
+		        
+		     });    
+		});        
+      </script>
+   </body>
+</html>
